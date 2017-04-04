@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2017 sp2 (x64) (http://www.altova.com) by Sundeep Singh Basra (xTeros) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="Quote">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="employees" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="account_id" type="xs:short"/>
+							<xs:element name="profile_id" type="xs:short"/>
+							<xs:element name="zipcode" type="xs:short"/>
+							<xs:element name="name" type="xs:string"/>
+							<xs:element name="type" type="xs:string"/>
+							<xs:element name="first_name" type="xs:string"/>
+							<xs:element name="last_name" type="xs:string"/>
+							<xs:element name="birth_of_date" type="xs:date"/>
+							<xs:element name="smoker" type="xs:string"/>
+							<xs:element name="date" type="xs:string"/>
+							<xs:element name="email">
+								<xs:complexType/>
+							</xs:element>
+							<xs:element name="profile_count" type="xs:byte"/>
+							<xs:element name="member_count" type="xs:byte"/>
+							<xs:element name="spouse_first_name" type="xs:string"/>
+							<xs:element name="spouse_last_name" type="xs:string"/>
+							<xs:element name="spouse_birth_of_date" type="xs:string"/>
+							<xs:element name="planIndex" type="xs:byte"/>
+							<xs:element name="employerValue" type="xs:decimal"/>
+							<xs:element name="employeeValue" type="xs:decimal"/>
+							<xs:element name="familyValue" type="xs:decimal"/>
+							<xs:element name="spouseTotalValue" type="xs:decimal"/>
+							<xs:element name="childrenTotalValue" type="xs:decimal"/>
+							<xs:element name="planInfo">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="XterosId" type="xs:string"/>
+										<xs:element name="planType" type="xs:string"/>
+										<xs:element name="planName" type="xs:string"/>
+										<xs:element name="source" type="xs:string"/>
+										<xs:element name="estimatedCost" type="xs:decimal"/>
+										<xs:element name="monthlyOutofPocket" type="xs:byte"/>
+										<xs:element name="monthlyAverageExpense" type="xs:byte"/>
+										<xs:element name="planDeductible" type="xs:short"/>
+										<xs:element name="planOutOfPocketLimit" type="xs:short"/>
+										<xs:element name="planURL">
+											<xs:complexType/>
+										</xs:element>
+										<xs:element name="companyLink" type="xs:string"/>
+										<xs:element name="companyName" type="xs:string"/>
+										<xs:element name="metalLevel" type="xs:string"/>
+										<xs:element name="esId" type="xs:string"/>
+										<xs:element name="adjustedMonthlyPremium">
+											<xs:complexType/>
+										</xs:element>
+										<xs:element name="adjustedMonthlyOOP" type="xs:byte"/>
+										<xs:element name="taxSubsidy" type="xs:byte"/>
+										<xs:element name="planSource" type="xs:string"/>
+										<xs:element name="CSRLevel" type="xs:byte"/>
+										<xs:element name="planId" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="age" type="xs:positiveInteger"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="total">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="employerValue" type="xs:decimal"/>
+							<xs:element name="employeeValue" type="xs:decimal"/>
+							<xs:element name="familyValue" type="xs:decimal"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="config">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="eRate" type="xs:byte"/>
+							<xs:element name="dRate" type="xs:byte"/>
+							<xs:element name="eRateH">
+								<xs:complexType/>
+							</xs:element>
+							<xs:element name="dRateH">
+								<xs:complexType/>
+							</xs:element>
+							<xs:element name="health" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="plans" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="es_id" type="xs:string"/>
+							<xs:element name="xteros_id" type="xs:short"/>
+							<xs:element name="plan_id" type="xs:short"/>
+							<xs:element name="enroll_plan_id" type="xs:short"/>
+							<xs:element name="profile_plan_id" type="xs:byte"/>
+							<xs:element name="plan_name" type="xs:string"/>
+							<xs:element name="state" type="xs:string"/>
+							<xs:element name="county" type="xs:byte"/>
+							<xs:element name="provider" type="xs:string"/>
+							<xs:element name="source">
+								<xs:complexType/>
+							</xs:element>
+							<xs:element name="type" type="xs:string"/>
+							<xs:element name="metal_level" type="xs:string"/>
+							<xs:element name="account_id" type="xs:byte"/>
+							<xs:element name="plan_calculate_catagory_name" type="xs:string"/>
+							<xs:element name="calculate_flag" type="xs:boolean"/>
+							<xs:element name="ranking">
+								<xs:complexType/>
+							</xs:element>
+							<xs:element name="status">
+								<xs:complexType/>
+							</xs:element>
+							<xs:element name="enroll" type="xs:boolean"/>
+							<xs:element name="publish" type="xs:boolean"/>
+							<xs:element name="choose" type="xs:boolean"/>
+							<xs:element name="calc">
+								<xs:complexType/>
+							</xs:element>
+							<xs:element name="planYear" type="xs:short"/>
+							<xs:element name="startPublishDate" type="xs:string"/>
+							<xs:element name="endPublishDate" type="xs:string"/>
+							<xs:element name="expiryDate" type="xs:string"/>
+							<xs:element name="isActiveVersion" type="xs:byte"/>
+							<xs:element name="createDate" type="xs:string"/>
+							<xs:element name="planInfo">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="XterosId" type="xs:string"/>
+										<xs:element name="planType" type="xs:string"/>
+										<xs:element name="planName" type="xs:string"/>
+										<xs:element name="source" type="xs:string"/>
+										<xs:element name="estimatedCost" type="xs:decimal"/>
+										<xs:element name="monthlyOutofPocket" type="xs:byte"/>
+										<xs:element name="monthlyAverageExpense" type="xs:byte"/>
+										<xs:element name="planDeductible" type="xs:short"/>
+										<xs:element name="planOutOfPocketLimit" type="xs:short"/>
+										<xs:element name="planURL">
+											<xs:complexType/>
+										</xs:element>
+										<xs:element name="companyLink" type="xs:string"/>
+										<xs:element name="companyName" type="xs:string"/>
+										<xs:element name="metalLevel" type="xs:string"/>
+										<xs:element name="esId" type="xs:string"/>
+										<xs:element name="adjustedMonthlyPremium">
+											<xs:complexType/>
+										</xs:element>
+										<xs:element name="adjustedMonthlyOOP" type="xs:byte"/>
+										<xs:element name="taxSubsidy" type="xs:byte"/>
+										<xs:element name="planSource" type="xs:string"/>
+										<xs:element name="CSRLevel" type="xs:byte"/>
+										<xs:element name="planId" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="planExtraData">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="esId" type="xs:string"/>
+										<xs:element name="planName" type="xs:string"/>
+										<xs:element name="companyLink" type="xs:string"/>
+										<xs:element name="ratingArea" type="xs:byte"/>
+										<xs:element name="companyName" type="xs:string"/>
+										<xs:element name="xterosId" type="xs:short"/>
+										<xs:element name="countyName" type="xs:string"/>
+										<xs:element name="countyCode" type="xs:short"/>
+										<xs:element name="age" type="xs:byte"/>
+										<xs:element name="planURL">
+											<xs:complexType/>
+										</xs:element>
+										<xs:element name="planId" type="xs:string"/>
+										<xs:element name="zipCode" type="xs:short"/>
+										<xs:element name="smoker" type="xs:byte"/>
+										<xs:element name="estimatedCost" type="xs:decimal"/>
+										<xs:element name="planType" type="xs:string"/>
+										<xs:element name="planSource" type="xs:string"/>
+										<xs:element name="state" type="xs:string"/>
+										<xs:element name="queryId" type="xs:byte"/>
+										<xs:element name="carrierId" type="xs:string"/>
+										<xs:element name="metalLevel" type="xs:string"/>
+										<xs:element name="formularyLink">
+											<xs:complexType/>
+										</xs:element>
+										<xs:element name="planBrochure" type="xs:anyURI"/>
+										<xs:element name="summaryBenefit" type="xs:anyURI"/>
+										<xs:element name="CSRxterosId" type="xs:byte"/>
+										<xs:element name="CSRLevel" type="xs:byte"/>
+										<xs:element name="policyType" type="xs:string"/>
+										<xs:element name="sourceType" type="xs:string"/>
+										<xs:element name="planYear" type="xs:short"/>
+										<xs:element name="startPublishDate" type="xs:string"/>
+										<xs:element name="endPublishDate" type="xs:string"/>
+										<xs:element name="expiryDate" type="xs:string"/>
+										<xs:element name="isActiveVersion" type="xs:byte"/>
+										<xs:element name="createDate" type="xs:string"/>
+										<xs:element name="employeeTotal" type="xs:byte"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
